@@ -1,4 +1,4 @@
-import { Table } from './Table';
+import { MaterialTable } from './MaterialTable';
 import * as React from 'react';
 import { EmptyLayout } from '../layout/EmptyLayout';
 
@@ -13,7 +13,7 @@ export const routes: RouteType[] = [
   {
     name: 'Space',
     path: '/',
-    component: Table,
+    component: MaterialTable,
     layout: EmptyLayout,
   },
 ];

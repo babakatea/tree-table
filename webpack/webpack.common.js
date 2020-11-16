@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const configureHtml = () => {
   return {
-    title: "Tree table test tatsk",
+    title: "Tree table test task",
     filename: "index.html",
     template: path.resolve("templates", "webapp.html"),
     inject: true,
