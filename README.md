@@ -5,3 +5,6 @@ To run the project:
 2. npm start
 
 Open on: http://localhost:8080/
+
+![Screenshot](opened_table.png)
+![Screenshot](closed_table.png)
