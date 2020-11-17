@@ -1,1 +1,1 @@
-export { EmptyLayout } from "./EmptyLayout.component";
+export { EmptyLayout } from "./EmptyLayout";

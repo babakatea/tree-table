@@ -5,7 +5,7 @@ export type MockDataType =
     pn?: number;
     applicableAPU?: string;
     base?: string;
-    actualLocation: string;
+    actualLocations: string[];
   };
 
 

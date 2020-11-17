@@ -1,6 +1,7 @@
 export type ColumnType = {
   name: string;
   key: number;
+  align?: "inherit" | "left" | "center" | "right" | "justify";
 };
 
 export type TableConfigType = {
@@ -27,7 +28,8 @@ export const tableConfig: TableConfigType = {
     },
     {
       name: 'Actual location',
-      key: 4
+      key: 4,
+      align: 'right'
     }
   ]
 };

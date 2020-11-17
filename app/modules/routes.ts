@@ -1,9 +1,8 @@
-import { MaterialTable } from './MaterialTable';
 import * as React from 'react';
 import { EmptyLayout } from '../layout/EmptyLayout';
+import { MainScreen } from "./MainScreen";
 
 export type RouteType = {
-  name: string;
   path: string;
   component: React.FunctionComponent;
   layout: React.FunctionComponent;
@@ -11,9 +10,8 @@ export type RouteType = {
 
 export const routes: RouteType[] = [
   {
-    name: 'Space',
     path: '/',
-    component: MaterialTable,
+    component: MainScreen,
     layout: EmptyLayout,
   },
 ];

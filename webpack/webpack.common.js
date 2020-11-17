@@ -31,7 +31,7 @@ module.exports = () => {
           exclude: /node_modules/,
           options: {
             getCustomTransformers: () => ({
-              before: [tsImportPluginFactory({ style: "css" })],
+              before: [tsImportPluginFactory({style: "css"})],
             }),
           },
         },
@@ -39,6 +39,14 @@ module.exports = () => {
           test: /\.(eot|ttf|woff|woff2)$/,
           use: ["url-loader?limit=100000"],
         },
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+        {
+          test: /\.less$/,
+          use: ["style-loader", {loader: 'css-loader', options: {sourceMap: 1}}, "postcss-loader", "less-loader"]
+        }
       ],
     },
     resolve: {
