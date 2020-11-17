@@ -6,5 +6,5 @@ To run the project:
 
 Open on: http://localhost:8080/
 
-![Screenshot](opened_table.png)
-![Screenshot](closed_table.png)
+![Screenshot](opened_table.PNG)
+![Screenshot](closed_table.PNG)
